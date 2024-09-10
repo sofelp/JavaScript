@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página JS</title>
-    <style>
+    <style>ipisicing elit. Fugit quibusdam sapiente distinctio voluptatem iure, commodi vero fuga, obcaecati dolorem sint facere mollitia labore dolore accusamus impedit quis veritatis sit expedita!
+    
+    O resultado é 4
         body {
-          background-color: aqua;  
+          
         }
         /*comentario em css*/
+
+        main {
+            color: white;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Meu Primeiro Script</h1> <!--comentario em html-->
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam sapiente distinctio voluptatem iure, commodi vero fuga, obcaecati dolorem sint facere mollitia labore dolore accusamus impedit quis veritatis sit expedita!</p>
+    <main>
+        <h1>Meu Primeiro Script</h1> <!--comentario em html-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quibusdam sapiente distinctio voluptatem iure, commodi vero fuga, obcaecati dolorem sint facere mollitia labore dolore accusamus impedit quis veritatis sit expedita!</p>
+    </main>
 
     <script>
        var n1 = Number.parseFloat(window.prompt('Digite um Número'))
        var n2 = Number.parseFloat(window.prompt('Agora Outro Número:'))
        var s = n1 + n2
-       document.write('a soma do total é ' + s.toString() )
+       window.alert(`A soma total entre ${n1} e ${n2} é ${s}`)
+       document.write(`O resultado é ${s}`)
     </script>
 </body>
 </html>
