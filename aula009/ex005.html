@@ -16,13 +16,16 @@
     <h1>Iniciando com o DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Apredendo a suar <strong>DOM</strong> no Javascript</p>
-    <div>Clique em Mim</div>
+    <div id="msg">Clique em Mim</div>
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1]
         window.document.write('está escrito assim: '+ p1.innerHTML)
         p1.style.color = 'yellow'
         corpo.style.background = 'black'
+        var d = window.document.querySelector('div#msg')
+        d.innerText = 'Fala Mano'
+
     </script>
 </body>
 </html>
