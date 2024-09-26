@@ -14,9 +14,9 @@
             var txtn1 = document.getElementById('txtn1')
             var res = document.getElementById('res')
             var vel = Number(txtn1.value)  
-            res.innerText = `Sua Velocidade é ${vel} Km/h.Dirija com Cinto de Segurança` 
+            res.innerHTML = `<p>Sua Velocidade é <strong>${vel} Km/h</strong>. Dirija com Cinto de Segurança</p><br>` 
             if (vel > 12) {
-               res.innerText = 'Você foi Multado! Excesso de Velocidade.'
+               res.innerText += 'Você foi Multado! Excesso de Velocidade.'
             }
             
         }
