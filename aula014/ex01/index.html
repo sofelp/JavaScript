@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,26 @@
     <title>Contagem</title>
 </head>
 <body>
-    <h1>Vamos Contar</h1>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
     <section>
-        <div>
-            in
+        <div class="formulario">
+            <label for="inicio">Início</label>
+            <input type="number" name="inicio" id="inicio"> <br>
+            <label for="inicio">Fim</label>
+            <input type="number" name="fim" id="fim"> <br>
+            <label for="inicio">Passo</label>
+            <input type="number" name="passo" id="passo">
         </div>
         <div>
-
-        </div>
-        <div>
-
+            <input type="button" value="Consultar" onclick="consultar()"> 
+            <p class="resultado">Preparando Contagem...</p>
         </div>
     </section>
     <footer>
         <p>&copy;Felipãp.com</p>
     </footer>
+    <script src="script.js"></script> <!-- Corrigido aqui -->
 </body>
 </html>
