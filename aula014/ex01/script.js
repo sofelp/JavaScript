@@ -13,8 +13,10 @@ function consultar() {
 
     // Realizando a contagem
     for (var i = inicio; i <= fim; i += passo) {
-        contagem += i + " "; // Concatenando cada número com um espaço
+        contagem += i + "👉 "; // Concatenando cada número com um espaço
     }
+
+    contagem += "🏁"; // Adicionando a bandeira ao final
 
     // Exibindo o resultado
     resultado.innerText = `Contagem: ${contagem}`;
